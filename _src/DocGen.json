@@ -1,0 +1,53 @@
+{
+    "version": 1,
+    "title": "Gemini Enterprise for CX",
+    "summary": "Cybersecurity configuration guidance document for Gemini Enterprise for CX.",
+    "authors": [
+        "R. Lucier"
+    ],
+    "lastUpdated": "2026-09-24",
+    "serviceName": "geminiCustomerExperience",
+    "idPrefix": "SG-GCP-GECX",
+    "csvFile": "geminiCustomerExperienceGuidance.csv",
+    "guidanceFile": "geminiCustomerExperienceGuidance.md",
+    "referenceFile": "references.md",
+    "templateFile": "svcGuidanceTemplate.jinja",
+    "steps": {
+        "initialDraft": true,
+        "internalReview": true,
+        "publicReview": false,
+        "mapping": true,
+        "preventativeControlsIdentified": true,
+        "detectiveControlsIdentified": false,
+        "monitoringImplemented": false
+    },
+    "tags": [
+        "GCP"
+    ],
+    "cloudUserDocsUrl": "https://docs.cloud.google.com/gemini-enterprise-cx",
+    "livingHealthGuidance": false,
+    "serviceEnablementFile": "",
+    "publish": false,
+    "mkdocs": [
+        {
+            "parent": "/GCP/Gemini Enterprise for CX",
+            "title": "Gemini Enterprise for CX Overview",
+            "document": "README.md"
+        },
+        {
+            "parent": "/GCP/Gemini Enterprise for CX",
+            "title": "Gemini Enterprise for CX Security Guidance",
+            "document": "geminiCustomerExperienceGuidance.md"
+        },
+        {
+            "parent": "/GCP/Gemini Enterprise for CX",
+            "title": "Gemini Enterprise for CX Security CSV File",
+            "document": "geminiCustomerExperienceGuidance.csv"
+        },
+        {
+            "parent": "/GCP/Gemini Enterprise for CX",
+            "title": "Gemini Enterprise for CX References",
+            "document": "references.md"
+        }
+    ]
+}
