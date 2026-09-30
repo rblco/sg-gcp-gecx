@@ -3,7 +3,7 @@ content-type:
   - Readme
 subject: Gemini Enterprise for CX
 cloud: GCP
-date: 2026-09-24
+date: 2026-09-30
 tags:
   - scg
   - gcp
@@ -17,7 +17,7 @@ This project holds the Security Configuration Guide (SCG) for Google Cloud's Gem
 
 `_src/geminiCustomerExperienceGuidance.csv` is the guide. Everything else in this folder exists to support, explain, or evidence it. There is exactly one CSV, and there will only ever be one - a second variant would drift from the first the moment either was revised, and a reviewer would have no way to tell which one governs certification.
 
-The current draft holds **141 requirements across 12 categories**. It was authored 2026-09-04, amended the same day following a deep review, and updated on 2026-09-23 against the release notes, the three documentation gaps left open on 2026-09-04, and the restored HITRUST CSF v11 mapping requirement, then deep-reviewed and corrected the same day. On 2026-09-24 an external audit was verified and applied, together with Google's 2026-09-24 release, adding IDs 1390, 1400, and 1410. Forty-eight rows are at Revision 2, seventy-seven at Revision 1, and sixteen at Revision 0 (nine of them new this cycle); each changed row was incremented once for the cycle, which has not yet been published. The review and remediation are recorded in `notes/SCG-review-2026-09-04.md` and `notes/SCG-remediation-2026-09-04.md`; the 2026-09-23 update is recorded in `notes/SCG-update-2026-09-23.md`, its deep review in `notes/SCG-review-2026-09-23.md`, and the review fixes in `notes/SCG-remediation-2026-09-23.md`; the 2026-09-24 audit fixes are recorded in `notes/SCG-remediation-2026-09-24.md`, with the audit itself in `notes/Gemini-Ent-CX-GPT-Audit.md`; every row's change across the cycle is traced in `_src/geminiCustomerExperienceGuidance-diff-map-2026-09-23.csv`.
+The current draft holds **141 requirements across 12 categories**. It was authored 2026-09-04, amended the same day following a deep review, and updated on 2026-09-23 against the release notes, the three documentation gaps left open on 2026-09-04, and the restored HITRUST CSF v11 mapping requirement, then deep-reviewed and corrected the same day. On 2026-09-24 an external audit was verified and applied, together with Google's 2026-09-24 release, adding IDs 1390, 1400, and 1410. On 2026-09-30 the owner reset every row to Revision 0: the guide has never been published (`publish: false`), so the increments accumulated during the 2026-09-23 and 2026-09-24 drafting sessions were drafting-phase increments rather than published revisions, and the first published state carries Revision 0 on all 141 rows. A standard review the same day found 0 Blocker, 2 Major, 6 Minor, and 7 Info, and its fixes were applied to 13 rows without incrementing Revision. The review and remediation are recorded in `notes/SCG-review-2026-09-04.md` and `notes/SCG-remediation-2026-09-04.md`; the 2026-09-23 update is recorded in `notes/SCG-update-2026-09-23.md`, its deep review in `notes/SCG-review-2026-09-23.md`, and the review fixes in `notes/SCG-remediation-2026-09-23.md`; the 2026-09-24 audit fixes are recorded in `notes/SCG-remediation-2026-09-24.md`, with the audit itself in `notes/Gemini-Ent-CX-GPT-Audit.md`; the 2026-09-30 review is in `notes/SCG-review-2026-09-30.md` and its fixes in `notes/SCG-remediation-2026-09-30.md`; every row's change across the cycle is traced in `_src/geminiCustomerExperienceGuidance-diff-map-2026-09-23.csv`.
 
 ## How to read a row
 

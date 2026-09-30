@@ -178,3 +178,38 @@ The owner delegated the four open decisions. They were taken as follows, with th
 ### Outcome
 
 141 requirements across 12 categories (was 138). 41 rows revised; IDs 1390 (A2A Protocol tools prohibited while Preview), 1400 (WhatsApp and Instagram prohibited), and 1410 (App Editor separated from builder roles, SHOULD) added; no ID retired. Validation passed with 0 errors and 104 of 104 reference URLs live (`notes/SCG-validation-2026-09-24.md`). The cycle diff map carries an audit-fix clause per changed row. The guidance markdown was re-rendered with the organization template, after confirming the render reproduces the previous file byte for byte from the pre-fix CSV, and its PDF regenerated.
+
+## 2026-09-30 - Standard review (scg-reviewer)
+
+### Prompt as submitted
+
+```prompts
+Review and QA the `geminiCustomerExperienceGuidance` security configuration guide
+```
+
+### Inputs
+
+File resolved to `_src/geminiCustomerExperienceGuidance.csv` (141 requirements), the only guide by that name outside the archive and baseline copies. Depth defaulted to standard; authoritative roots taken from `resources.md`; overlay inferred from the Mappings column as HIPAA plus HITRUST CSF v11. Structural, directive, hygiene, NIST OSCAL, HIPAA, HITRUST format, OWASP, ATLAS, and URL checks were run programmatically; every row was read; six vendor pages were re-fetched for the highest-impact claims. The CSV was not edited.
+
+### Outcome
+
+0 Blocker, 2 Major, 6 Minor, 7 Info. Report at `notes/SCG-review-2026-09-30.md`. The first Major is that the working tree differs from commit 3e6dcce on every row's Revision (all now 0) and four reworded cells, with no record in the README, notes, DocGen, or this log; the second is that ID 1140 (tool registration alerting) is SHOULD at Med where the guide's own analysis places it at MUST and High. All 104 reference URLs were live and every NIST, HIPAA, OWASP, and ATLAS identifier verified.
+
+## 2026-09-30 - Review fixes
+
+### Prompt as submitted
+
+```prompts
+Go ahead and resolve and edit
+```
+
+### Decisions recorded so they are not re-litigated
+
+**Revision reset stands.** The owner's reset of every row to Revision 0 (made before the review) is the intended first-release state for a guide that has never been published; the drafting-phase increments of 2026-09-23 and 2026-09-24 are superseded and the "one increment per cycle" rule applies from first publication. Fixes applied today do not increment Revision. README, DocGen, and the 2026-09-24 notes carry the reconciliation.
+
+**Tool registration alerting is a MUST at High** (ID 1140), matching the settings and deletion alerts. **ID 950 is Med.** **Notes are capped below 1,000 characters**; the 2026-09-24 decision to keep ID 450's long Notes is superseded, with the documentation inconsistencies logged in `notes/external-source-log.md`. **Pre-GA prohibitions all map to HIPAA 164.308(a)(8)**, with the business associate citations retained on the two Agent Assist rows.
+
+### Outcome
+
+13 rows revised (10, 60, 390, 450, 530, 620, 680, 950, 1100, 1140, 1260, 1320, 1350); no ID added or retired. Validation passed with 0 errors (`notes/SCG-validation-2026-09-30.md`); all eleven launch-stage rows re-verified unchanged. The guidance markdown was re-rendered with the organization template after confirming the render reproduces the previous file from the pre-fix CSV. Records: `notes/SCG-remediation-2026-09-30.md`, review Resolutions section, diff map clauses, `_src/archive/geminiCustomerExperienceGuidance.2026-09-30.pre-review-fixes.csv`. Not committed.
+

@@ -102,3 +102,7 @@ Not changed: ID 310, which already names California Business and Professions Cod
 ## Verification
 
 The CSV passed every generator Step 6 check with 0 errors, and all 104 distinct reference URLs returned HTTP 200 on 2026-09-24. See `notes/SCG-validation-2026-09-24.md`. The rendered guidance document was regenerated with the organization's template through `processDocs.py`, after first confirming that the same render of the pre-fix CSV reproduced the existing `_src/geminiCustomerExperienceGuidance.md` byte for byte.
+
+## Addendum 2026-09-30
+
+The Revision numbering recorded above (48 rows at 2, 77 at 1, 16 at 0) was superseded on 2026-09-30, when the owner reset every row to Revision 0 because the guide has never been published and the cycle increments were drafting-phase increments. The row content described in this record is unchanged by that reset. See `notes/SCG-remediation-2026-09-30.md`.

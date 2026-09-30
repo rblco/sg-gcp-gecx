@@ -5,7 +5,7 @@
     "authors": [
         "R. Lucier"
     ],
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-30",
     "serviceName": "geminiCustomerExperience",
     "idPrefix": "SG-GCP-GECX",
     "csvFile": "geminiCustomerExperienceGuidance.csv",

@@ -58,3 +58,7 @@ Validated file: `_src/geminiCustomerExperienceGuidance.csv` after the 2026-09-24
 - **Host migration redirects.** 19 references on `cloud.google.com` redirect to the same page on `docs.cloud.google.com`, one to a changed path; all resolve and were left as cited.
 - **Launch-stage rows are volatile.** IDs 20, 40, 50, 320, 740, 800, 1270, 1320, 1350, 1360, and 1390 rest on a Preview, Pre-GA, or unreleased status that can change without a release note.
 - **Residual documentation gaps.** The Python code tool sandbox identity (ID 450), BAA coverage of Google Search grounding (ID 470), the launch stage of `v1beta` and `v1alpha1` (ID 30), and where the OAuth tool option holds its client secret (ID 370) remain unconfirmed by Google.
+
+## Addendum 2026-09-30
+
+The Revision distribution reported above was superseded on 2026-09-30 by a reset of every row to Revision 0 (first release, never published). The validation results otherwise stand; the file was re-validated after the 2026-09-30 review fixes in `notes/SCG-validation-2026-09-30.md`.
